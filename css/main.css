@@ -1,0 +1,34 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+body {
+	font-family: "Open Sans";
+	font-size: 16px;
+	margin: 0; padding: 0;
+	background: -moz-linear-gradient(center top, #c9dbe9, #f8ffff 350px);
+	background-color: #f8ffff;
+	background-repeat: no-repeat;
+}
+
+#header h1 {
+	margin: 0; padding: 0;
+	display: block;
+
+	position: absolute; z-index: 6;
+	
+	top: 30px; left: 15%;
+
+	color: white;
+	font-weight: 300; font-size: 60px;
+	text-shadow: 0 0 25px rgba(0,0,0, 0.65);
+}
+
+#header h1 #first {
+	color: black;
+	font-weight: 400; font-style: italic;
+	text-shadow: none;
+}
+
+#content {
+	width: 900px; height: 400px;
+	margin: auto;
+}

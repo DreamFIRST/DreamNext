@@ -1,0 +1,48 @@
+#clouds-container {
+	height: 250px;
+	overflow: hidden;
+}
+
+.cloud {
+	float: left;
+	background: no-repeat;
+}
+
+#cloud1 {
+	background-image: url("../assets/clouds/1.png");
+	width: 160px; height: 100px;
+
+	position: relative; z-index: 1;
+	top: 80px; left: -25%;
+	opacity: 0.8;
+
+	-webkit-animation: moveclouds 30s linear infinite;
+	-moz-animation: moveclouds 30s linear infinite;
+	-o-animation: moveclouds 30s linear infinite;
+}
+
+/*#cloud2 {
+	background-image: url("../assets/clouds/2.png");
+	width: 160px; height: 120px;
+
+	position: relative; z-index: 2;
+	top: 0px; left: -75%;
+	opacity: 0.8;
+
+	-webkit-animation: moveclouds 30s linear infinite;
+	-moz-animation: moveclouds 30s linear infinite;
+	-o-animation: moveclouds 30s linear infinite;
+}*/
+
+@-webkit-keyframes moveclouds {
+	from { margin-left: 100%; }
+	to { margin-left: -100%; }
+}
+@-moz-keyframes moveclouds {
+	from { margin-left: 100%; }
+	to { margin-left: -100%; }
+}
+@-o-keyframes moveclouds {
+	from { margin-left: 100%; }
+	to { margin-left: -100%; }
+}
