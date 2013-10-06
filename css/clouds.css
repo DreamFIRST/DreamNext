@@ -13,8 +13,12 @@
 	width: 160px; height: 100px;
 
 	z-index: 1;
-	top: 100px; left: 70%;
+	top: 100px; left: -30%;
 	opacity: 0.6;
+
+	-webkit-animation: moveclouds 100s linear infinite;
+	-moz-animation: moveclouds 100s linear infinite;
+	-o-animation: moveclouds 100s linear infinite;
 }
 
 #cloud2 {
@@ -23,8 +27,12 @@
 	width: 160px; height: 120px;
 
 	z-index: 2;
-	top: 180px; left: 8%;
+	top: 180px; left: -92%;
 	opacity: 0.9;
+
+	-webkit-animation: moveclouds 100s linear infinite;
+	-moz-animation: moveclouds 100s linear infinite;
+	-o-animation: moveclouds 100s linear infinite;
 }
 
 #cloud3 {
@@ -38,23 +46,6 @@
 #cloud5 {
 	
 }
-
-/*#cloud2 {
-	background-image: url("../assets/clouds/2.png");
-	width: 160px; height: 120px;
-
-	position: relative; z-index: 2;
-	top: 0px; left: -75%;
-	opacity: 0.8;
-
-	-webkit-animation: moveclouds 20s linear infinite;
-	-moz-animation: moveclouds 20s linear infinite;
-	-o-animation: moveclouds 20s linear infinite;
-}*/
-
-	/*-webkit-animation: moveclouds 20s linear infinite;
-	-moz-animation: moveclouds 20s linear infinite;
-	-o-animation: moveclouds 20s linear infinite;*/
 
 @-webkit-keyframes moveclouds {
 	from { margin-left: 100%; }
