@@ -1,5 +1,5 @@
 #clouds-container {
-	height: 250px;
+	height: 260px;
 	overflow: hidden;
 }
 
@@ -13,12 +13,30 @@
 	width: 160px; height: 100px;
 
 	position: relative; z-index: 1;
-	top: 80px; left: -300px;
+	top: 30px; left: 70%;
 	opacity: 0.6;
+}
 
-	-webkit-animation: moveclouds 20s linear infinite;
-	-moz-animation: moveclouds 20s linear infinite;
-	-o-animation: moveclouds 20s linear infinite;
+#cloud2 {
+	background-image: url("../assets/clouds/2.png");
+
+	width: 160px; height: 120px;
+
+	position: relative; z-index: 1;
+	top: 100px; left: 15%;
+	opacity: 0.9;
+}
+
+#cloud3 {
+	
+}
+
+#cloud4 {
+	
+}
+
+#cloud5 {
+	
 }
 
 /*#cloud2 {
@@ -33,6 +51,10 @@
 	-moz-animation: moveclouds 20s linear infinite;
 	-o-animation: moveclouds 20s linear infinite;
 }*/
+
+	/*-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;*/
 
 @-webkit-keyframes moveclouds {
 	from { margin-left: 100%; }

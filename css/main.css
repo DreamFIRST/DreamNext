@@ -1,10 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 body {
-	font-family: "Open Sans";
-	font-size: 14px;
 	margin: 0; padding: 0;
-	background: -moz-linear-gradient(center top, #c9dbe9, #f8ffff 350px);
+
+	font-family: "Open Sans";
+	font-size: 15px;
+	line-height: 24px;
+	color: rgba(0,0,0, 0.8);
+
+	background: -moz-linear-gradient(center top, #6ea8c0, #c9dbe9, #f8ffff 350px);
 	background-color: #f8ffff;
 	background-repeat: no-repeat;
 }
@@ -14,21 +18,69 @@ body {
 	display: block;
 
 	position: absolute; z-index: 6;
-	
-	top: 30px; left: 15%;
+
+	top: 70px; left: 12%;
 
 	color: white;
 	font-weight: 300; font-size: 60px;
-	text-shadow: 0 0 25px rgba(0,0,0, 0.65);
 }
 
 #header h1 #first {
-	color: black;
-	font-weight: 400; font-style: italic;
-	text-shadow: none;
+	font-weight: 300;
+	font-style: italic;
+}
+
+nav {
+	overflow: hidden;
+}
+
+#nav {
+	margin: 30px 15% 0 0; padding: 0;
+
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 300;
+	color: rgba(255,255,255, 0.7);
+
+	list-style-type: none;
+	float: right;
+}
+
+#nav li {
+	float: left;
+}
+
+#nav li a {
+	margin: 0 5px; padding: 5px 10px;
+
+	color: rgba(255,255,255, 0.6);
+	text-decoration: none;
+
+	border: 1px solid transparent;
+	transition-duration: 0.2s;
+	transition-property: background, border, color;
+}
+
+#nav li[selected] a {
+	color: rgba(255,255,255, 0.8);
+}
+
+#nav li[selected]::after {
+	display: block;
+	content: "";
+
+	margin: 8px auto 0;
+	width: 65%;
+
+	border-bottom: 2px solid rgba(255,255,255, 0.75);
+}
+
+#nav li:hover a {
+	color: white;
+	border-radius: 3px;
 }
 
 #content {
-	width: 900px; height: 400px;
-	margin: auto;
+	max-width: 900px; height: 400px;
+	margin: auto; padding: 0 10%;
 }
