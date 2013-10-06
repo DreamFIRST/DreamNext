@@ -13,6 +13,8 @@ body {
 	background:         linear-gradient(top, #6ea8c0, #c9dbe9, #f8ffff 350px);
 	background-color: #f8ffff;
 	background-repeat: no-repeat;
+
+	-webkit-text-size-adjust:100%;
 }
 
 #header h1 {
@@ -37,7 +39,7 @@ nav {
 }
 
 #nav {
-	margin: 30px 30px 0 0; padding: 0;
+	margin: 30px 10% 0 0; padding: 0;
 
 	font-size: 18px;
 	line-height: 18px;
@@ -54,11 +56,11 @@ nav {
 
 #nav li a {
 	margin: 0; padding: 5px 10px;
+	display: block;
 
 	color: rgba(255,255,255, 0.6);
 	text-decoration: none;
 
-	border: 1px solid transparent;
 	transition-duration: 0.2s;
 	transition-property: background, border, color;
 }
@@ -75,8 +77,8 @@ nav {
 	display: block;
 	content: "";
 
-	margin: 8px auto 0;
-	width: 65%;
+	margin: 5px auto 0;
+	width: 75%;
 
 	border-bottom: 2px solid rgba(255,255,255, 0.75);
 }
@@ -89,4 +91,35 @@ nav {
 #content {
 	max-width: 900px; height: 400px;
 	margin: auto; padding: 0 10%;
+}
+
+@media screen and (max-width: 1100px) {
+	#nav {
+		margin-right: 30px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	#header h1 {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	body {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	#header h1 {
+		font-size: 48px;
+	}
+	#nav {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#content {
+		padding: 0 8%;
+	}
 }
