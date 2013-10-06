@@ -8,7 +8,9 @@ body {
 	line-height: 24px;
 	color: rgba(0,0,0, 0.8);
 
-	background: -moz-linear-gradient(center top, #6ea8c0, #c9dbe9, #f8ffff 350px);
+	background: -webkit-linear-gradient(top, #6ea8c0, #c9dbe9, #f8ffff 350px);
+	background:    -moz-linear-gradient(top, #6ea8c0, #c9dbe9, #f8ffff 350px);
+	background:         linear-gradient(top, #6ea8c0, #c9dbe9, #f8ffff 350px);
 	background-color: #f8ffff;
 	background-repeat: no-repeat;
 }
