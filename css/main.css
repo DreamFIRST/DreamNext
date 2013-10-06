@@ -26,12 +26,23 @@ body {
 	top: 90px; left: 12%;
 
 	color: white;
-	font-weight: 300; font-size: 60px;
+	font-weight: 300;
+	font-size: 60px;
+	line-height: 100%;
 }
 
 #header h1 #first {
 	font-weight: 300;
 	font-style: italic;
+}
+
+h2 {
+	font-size: 200%;
+	line-height: 100%;
+	font-weight: 300;
+
+	margin-top: 20px;
+	margin-bottom: 28px;
 }
 
 #menu-toggle {
@@ -129,6 +140,10 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
+	#header h1 {
+		top: 60px; left: 5%;
+	}
+
 	#menu-toggle {
 		display: block;
 		width: 32px; height: 32px;
