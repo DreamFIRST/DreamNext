@@ -60,7 +60,6 @@ nav {
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 300;
-	color: rgba(255,255,255, 0.7);
 
 	list-style-type: none;
 	float: right;
@@ -74,11 +73,11 @@ nav {
 	margin: 0; padding: 5px 10px;
 	display: block;
 
-	color: rgba(255,255,255, 0.6);
+	color: rgba(255,255,255, 0.8);
 	text-decoration: none;
 
 	transition-duration: 0.2s;
-	transition-property: background, border, color;
+	transition-property: background, border, color, text-shadow;
 }
 
 #nav li + li {
@@ -86,7 +85,7 @@ nav {
 }
 
 #nav li[selected] a {
-	color: rgba(255,255,255, 0.8);
+	color: rgba(255,255,255, 0.9);
 }
 
 #nav li[selected]::after {
@@ -102,6 +101,7 @@ nav {
 #nav li:hover a {
 	color: white;
 	border-radius: 3px;
+	text-shadow: 0 0 1px rgba(255,255,255, 0.2);
 }
 
 #content {
