@@ -7,86 +7,84 @@
 	float: left;
 	position: absolute;
 	background: no-repeat;
+
+	animation-name: moveclouds;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.cycleclouds {
+	animation-name: cycleclouds;
 }
 
 #cloud1 {
 	background-image: url("../assets/clouds/1.png");
 	width: 160px; height: 100px;
 
+	top: 150px; left: 20%;
 	z-index: 1;
-	top: 100px; left: -30%;
 	opacity: 0.6;
 
-	-webkit-animation: moveclouds 80s linear infinite;
-	-moz-animation: moveclouds 80s linear infinite;
-	-o-animation: moveclouds 80s linear infinite;
+	animation-duration: 80s;
 }
 
 #cloud2 {
 	background-image: url("../assets/clouds/2.png");
-
 	width: 160px; height: 120px;
 
 	z-index: 2;
-	top: 180px; left: -63%;
+	top: 180px; left: 63%;
 	opacity: 0.9;
 
-	-webkit-animation: moveclouds 70s linear infinite;
-	-moz-animation: moveclouds 70s linear infinite;
-	-o-animation: moveclouds 70s linear infinite;
+	animation-duration: 60s;
 }
 
 #cloud3 {
 	background-image: url("../assets/clouds/3.png");
-
 	width: 190px; height: 110px;
 
 	z-index: 2;
-	top: 160px; left: 30%;
+	top: 160px; left: 28%;
 	opacity: 0.8;
 
-	-webkit-animation: moveclouds 40s linear infinite;
-	-moz-animation: moveclouds 40s linear infinite;
-	-o-animation: moveclouds 40s linear infinite;
+	animation-duration: 40s;
 }
 
 #cloud4 {
 	background-image: url("../assets/clouds/4.png");
-
 	width: 170px; height: 110px;
 
 	z-index: 2;
-	top: 110px; left: 90%;
+	top: 130px; left: -30%;
 	opacity: 0.6;
 
-	-webkit-animation: moveclouds 40s linear infinite;
-	-moz-animation: moveclouds 40s linear infinite;
-	-o-animation: moveclouds 40s linear infinite;
+	animation-duration: 40s;
 }
 
 #cloud5 {
 	background-image: url("../assets/clouds/5.png");
-
 	width: 160px; height: 120px;
 
 	z-index: 2;
-	top: 160px; left: 56%;
+	top: 160px; left: -56%;
 	opacity: 0.7;
 
-	-webkit-animation: moveclouds 80s linear infinite;
-	-moz-animation: moveclouds 80s linear infinite;
-	-o-animation: moveclouds 80s linear infinite;
+	animation-duration: 80s;
 }
 
+@keyframes moveclouds {
+	from { margin-left: 0; }
+	to { margin-left: 100%; }
+}
+@keyframes cycleclouds {
+	from { margin-left: -100%; }
+	to { margin-left: 0%; }
+}
 @-webkit-keyframes moveclouds {
-	from { margin-left: 100%; }
-	to { margin-left: -100%; }
+	from { margin-left: 0; }
+	to { margin-left: 100%; }
 }
-@-moz-keyframes moveclouds {
-	from { margin-left: 100%; }
-	to { margin-left: -100%; }
-}
-@-o-keyframes moveclouds {
-	from { margin-left: 0%; }
-	to { margin-left: -100%; }
+@-webkit-keyframes cycleclouds {
+	from { margin-left: -100%; }
+	to { margin-left: 0%; }
 }
