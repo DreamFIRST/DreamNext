@@ -9,12 +9,16 @@
 	background: no-repeat;
 
 	animation-name: moveclouds;
+	-webkit-animation-name: moveclouds;
 	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
 	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
 }
 
 .cycleclouds {
 	animation-name: cycleclouds;
+	-webkit-animation-name: cycleclouds;
 }
 
 #cloud1 {
@@ -26,6 +30,7 @@
 	opacity: 0.6;
 
 	animation-duration: 80s;
+	-webkit-animation-duration: 80s;
 }
 
 #cloud2 {
@@ -37,6 +42,7 @@
 	opacity: 0.9;
 
 	animation-duration: 60s;
+	-webkit-animation-duration: 60s;
 }
 
 #cloud3 {
@@ -48,6 +54,7 @@
 	opacity: 0.8;
 
 	animation-duration: 40s;
+	-webkit-animation-duration: 40s;
 }
 
 #cloud4 {
@@ -59,6 +66,7 @@
 	opacity: 0.6;
 
 	animation-duration: 40s;
+	-webkit-animation-duration: 40s;
 }
 
 #cloud5 {
@@ -70,6 +78,7 @@
 	opacity: 0.7;
 
 	animation-duration: 80s;
+	-webkit-animation-duration: 80s;
 }
 
 @keyframes moveclouds {
