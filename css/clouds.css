@@ -1,6 +1,7 @@
 #clouds-container {
 	height: 260px;
 	overflow: hidden;
+	position: relative;
 }
 
 .cloud {
@@ -25,7 +26,7 @@
 	background-image: url("../assets/clouds/1.png");
 	width: 160px; height: 100px;
 
-	top: 150px; left: 20%;
+	top: 85px; left: 20%;
 	z-index: 1;
 	opacity: 0.6;
 
@@ -38,7 +39,7 @@
 	width: 160px; height: 120px;
 
 	z-index: 2;
-	top: 180px; left: 63%;
+	top: 115px; left: 63%;
 	opacity: 0.9;
 
 	animation-duration: 60s;
@@ -50,7 +51,7 @@
 	width: 190px; height: 110px;
 
 	z-index: 2;
-	top: 160px; left: 28%;
+	top: 95px; left: 28%;
 	opacity: 0.8;
 
 	animation-duration: 40s;
@@ -62,7 +63,7 @@
 	width: 170px; height: 110px;
 
 	z-index: 2;
-	top: 130px; left: -30%;
+	top: 65px; left: -30%;
 	opacity: 0.6;
 
 	animation-duration: 40s;
@@ -74,7 +75,7 @@
 	width: 160px; height: 120px;
 
 	z-index: 2;
-	top: 160px; left: -56%;
+	top: 95px; left: -56%;
 	opacity: 0.7;
 
 	animation-duration: 80s;
